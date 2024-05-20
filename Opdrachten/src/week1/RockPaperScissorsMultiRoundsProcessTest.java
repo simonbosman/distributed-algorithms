@@ -294,8 +294,8 @@ class RockPaperScissorsMultiRoundsProcessTest {
 		System.out.println(output.toString());
 
 		for (int i = 0; i < 6; i++) {
-			assertEquals(1, output.get("p" + i).size());
-			assertTrue(res.contains(output.get("p" + i).iterator().next()));
+        assertEquals(1, output.get("p" + i).size());
+        assertTrue(res.contains(output.get("p" + i).iterator().next()));
 		}
 	}
 }

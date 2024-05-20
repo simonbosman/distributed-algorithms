@@ -33,10 +33,12 @@ public class RockPaperScissorsProcess extends Process {
         if (!this.otherProcesses.contains(c.getSender())) {
             throw new IllegalReceiveException();
         }
+
         RockPaperScissorsMessage message = (RockPaperScissorsMessage) m;
         Item opponentItem = message.getItem();
         win = win || this.item.beats(opponentItem);
         loose = loose || opponentItem.beats(this.item);
+
         this.otherProcesses.remove(c.getSender());
         if (this.otherProcesses.isEmpty()){
             this.print(win + " " + loose);
