@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eb7fca8-b4ef-46d6-a0a2-42512a73e4f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/week1/DebugTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/RockPaperScissorsMultiRoundsProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week1/RockPaperScissorsMultiRoundsProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/RockPaperScissorsMultiRoundsProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week1/RockPaperScissorsMultiRoundsProcessTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/RockPaperScissorsProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week1/RockPaperScissorsProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week1/.#RockPaperScissorsMultiRoundsProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/CausalOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/CausalOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/CausalOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/CausalOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/GlobalTransitionSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/GlobalTransitionSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/GlobalTransitionSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/GlobalTransitionSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,70 +60,80 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.RockPaperScissorsMultiRoundsProcessTest">
-    <configuration name="All in Opdrachten (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Opdrachten" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="packagt e" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DebugTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CausalOrderTest.toComputationTest1">
+    <configuration name="CausalOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week1.*" />
+          <option name="PATTERN" value="week2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week1" />
-      <option name="MAIN_CLASS_NAME" value="week1.DebugTest" />
+      <option name="PACKAGE_NAME" value="week2" />
+      <option name="MAIN_CLASS_NAME" value="week2.CausalOrderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RockPaperScissorsCheatingProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CausalOrderTest.toComputationTest0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week1.*" />
+          <option name="PATTERN" value="week2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week1" />
-      <option name="MAIN_CLASS_NAME" value="week1.RockPaperScissorsCheatingProcessTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="week2" />
+      <option name="MAIN_CLASS_NAME" value="week2.CausalOrderTest" />
+      <option name="METHOD_NAME" value="toComputationTest0" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RockPaperScissorsMultiRoundsProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CausalOrderTest.toComputationTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week1.*" />
+          <option name="PATTERN" value="week2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week1" />
-      <option name="MAIN_CLASS_NAME" value="week1.RockPaperScissorsMultiRoundsProcessTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="week2" />
+      <option name="MAIN_CLASS_NAME" value="week2.CausalOrderTest" />
+      <option name="METHOD_NAME" value="toComputationTest1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RockPaperScissorsProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CausalOrderTest.toComputationTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week1.*" />
+          <option name="PATTERN" value="week2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week1" />
-      <option name="MAIN_CLASS_NAME" value="week1.RockPaperScissorsProcessTest" />
+      <option name="PACKAGE_NAME" value="week2" />
+      <option name="MAIN_CLASS_NAME" value="week2.CausalOrderTest" />
+      <option name="METHOD_NAME" value="toComputationTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GlobalTransitionSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Opdrachten" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week2" />
+      <option name="MAIN_CLASS_NAME" value="week2.GlobalTransitionSystemTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RockPaperScissorsMultiRoundsProcessTest" />
-        <item itemvalue="JUnit.DebugTest" />
-        <item itemvalue="JUnit.RockPaperScissorsProcessTest" />
-        <item itemvalue="JUnit.RockPaperScissorsCheatingProcessTest" />
-        <item itemvalue="JUnit.All in Opdrachten (1)" />
+        <item itemvalue="JUnit.CausalOrderTest.toComputationTest1" />
+        <item itemvalue="JUnit.CausalOrderTest.toComputationTest2" />
+        <item itemvalue="JUnit.CausalOrderTest.toComputationTest0" />
+        <item itemvalue="JUnit.CausalOrderTest" />
+        <item itemvalue="JUnit.GlobalTransitionSystemTest" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +158,8 @@
       <option name="presentableId" value="Default" />
       <updated>1715422707596</updated>
       <workItem from="1715422709620" duration="1015000" />
-      <workItem from="1716040381350" duration="33930000" />
+      <workItem from="1716040381350" duration="34755000" />
+      <workItem from="1716382731432" duration="21577000" />
     </task>
     <servers />
   </component>
@@ -154,11 +167,27 @@
     <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week2/CausalOrder.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="week2.GlobalTransitionSystem" memberName="transitions" />
+        <PinnedItemInfo parentTag="java.util.LinkedHashMap$Entry" memberName="value" />
         <PinnedItemInfo parentTag="java.lang.Integer" memberName="value" />
         <PinnedItemInfo parentTag="week1.RockPaperScissorsMultiRoundsProcess" memberName="roundOtherProcesses" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Opdrachten$CausalOrderTest_toComputationTest1.ic" NAME="CausalOrderTest.toComputationTest1 Coverage Results" MODIFIED="1716745687189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>week2.*</FILTER>
+    </SUITE>
   </component>
 </project>

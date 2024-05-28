@@ -1,5 +1,6 @@
 package week2;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -7,86 +8,130 @@ import java.util.Map;
 import java.util.Set;
 
 import framework.Network;
+import framework.Process;
 
 public class CausalOrder {
 
-	private Set<Pair> pairs = new LinkedHashSet<>();
+    private Set<Pair> pairs = new LinkedHashSet<>();
 
-	public CausalOrder() {
-	}
+    public CausalOrder() {
+    }
 
-	public CausalOrder(List<Event> sequence) {
-		// TODO
-	}
+    public CausalOrder(List<Event> sequence) {
 
-	public Set<List<Event>> toComputation(Set<Event> events) {
-		// TODO
-		return null;
-	}
-	
-	/*
-	 * -------------------------------------------------------------------------
-	 */
+        Map<Process, ArrayList<Event>> events = new LinkedHashMap<>();
 
-	@Override
-	public boolean equals(Object o) {
-		if (o instanceof CausalOrder) {
-			CausalOrder that = (CausalOrder) o;
-			return this.pairs.equals(that.pairs);
-		} else {
-			return false;
-		}
-	}
+        for (Event event : sequence) {
+            if (!events.containsKey(event.getProcess())) {
+                events.put(event.getProcess(), new ArrayList<>());
+            }
+            events.get(event.getProcess()).add(event);
+            if (event instanceof SendEvent) {
+                addPair(event, ((SendEvent) event).getCorrespondingReceiveEvent(sequence));
+            }
+        }
 
-	@Override
-	public int hashCode() {
-		return pairs.size();
-	}
+        for (ArrayList<Event> list : events.values()) {
+            for (int i = 1; i < list.size(); i++) {
+                addPair(list.get(i - 1), list.get(i));
+            }
+        }
+    }
 
-	@Override
-	public String toString() {
-		StringBuilder b = new StringBuilder();
-		for (Pair p : pairs) {
-			b.append(" ").append(p);
-		}
-		return b.toString().trim();
-	}
+    public Set<List<Event>> toComputation(Set<Event> events) {
+        Set<List<Event>> result = new LinkedHashSet<>();
+        permutation(events, new ArrayList<>(), result);
+        return result;
+    }
 
-	public void addPair(Event left, Event right) {
-		pairs.add(new Pair(left, right));
-	}
+    private void permutation(Set<Event> events, List<Event> prefix, Set<List<Event>> result) {
+        if (events.isEmpty() && checkCausalOrder(prefix)) {
+            result.add(new ArrayList<>(prefix));
+        } else {
+            for (Event event : new LinkedHashSet<>(events)) {
+                Set<Event> remaining = new LinkedHashSet<>(events);
+                remaining.remove(event);
+                prefix.add(event);
+                permutation(remaining, prefix, result);
+                prefix.remove(prefix.size() - 1);
+            }
+        }
+    }
 
-	public Set<Pair> getPairs() {
-		return new LinkedHashSet<>(pairs);
-	}
+    private boolean checkCausalOrder(List<Event> sequence) {
+        for (Pair pair : pairs) {
+            int left = sequence.indexOf(pair.getLeft());
+            int right = sequence.indexOf(pair.getRight());
+            if (left == -1 || right == -1 || left > right) {
+                return false;
+            }
+        }
+        return true;
+    }
 
-	public static CausalOrder parse(String s, Network n) {
+    /*
+     * -------------------------------------------------------------------------
+     */
 
-		CausalOrder order = new CausalOrder();
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof CausalOrder) {
+            CausalOrder that = (CausalOrder) o;
+            return this.pairs.equals(that.pairs);
+        } else {
+            return false;
+        }
+    }
 
-		Map<String, Event> events = new LinkedHashMap<>();
+    @Override
+    public int hashCode() {
+        return pairs.size();
+    }
 
-		String[] tokens = s.split(" ");
-		for (String token : tokens) {
+    @Override
+    public String toString() {
+        StringBuilder b = new StringBuilder();
+        for (Pair p : pairs) {
+            b.append(" ").append(p);
+        }
+        return b.toString().trim();
+    }
 
-			String[] subtokens = token.split("<");
-			if (subtokens.length != 2) {
-				throw new IllegalArgumentException();
-			}
+    public void addPair(Event left, Event right) {
+        pairs.add(new Pair(left, right));
+    }
 
-			String left = subtokens[0];
-			String right = subtokens[1];
+    public Set<Pair> getPairs() {
+        return new LinkedHashSet<>(pairs);
+    }
 
-			if (!events.containsKey(left)) {
-				events.put(left, Event.parse(left, n));
-			}
-			if (!events.containsKey(right)) {
-				events.put(right, Event.parse(right, n));
-			}
+    public static CausalOrder parse(String s, Network n) {
 
-			order.addPair(events.get(left), events.get(right));
-		}
+        CausalOrder order = new CausalOrder();
 
-		return order;
-	}
+        Map<String, Event> events = new LinkedHashMap<>();
+
+        String[] tokens = s.split(" ");
+        for (String token : tokens) {
+
+            String[] subtokens = token.split("<");
+            if (subtokens.length != 2) {
+                throw new IllegalArgumentException();
+            }
+
+            String left = subtokens[0];
+            String right = subtokens[1];
+
+            if (!events.containsKey(left)) {
+                events.put(left, Event.parse(left, n));
+            }
+            if (!events.containsKey(right)) {
+                events.put(right, Event.parse(right, n));
+            }
+
+            order.addPair(events.get(left), events.get(right));
+        }
+
+        return order;
+    }
 }
