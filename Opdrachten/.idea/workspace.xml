@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0eb7fca8-b4ef-46d6-a0a2-42512a73e4f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/.#RockPaperScissorsMultiRoundsProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/CausalOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/CausalOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/CausalOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/CausalOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/GlobalTransitionSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/GlobalTransitionSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/GlobalTransitionSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/GlobalTransitionSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/LamportsClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/LamportsClock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.CausalOrderTest.toComputationTest1">
+  <component name="RunManager" selected="JUnit.LamportsClockTest.testConstructor1">
     <configuration name="CausalOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
@@ -72,22 +68,6 @@
       <option name="PACKAGE_NAME" value="week2" />
       <option name="MAIN_CLASS_NAME" value="week2.CausalOrderTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CausalOrderTest.toComputationTest0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Opdrachten" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week2" />
-      <option name="MAIN_CLASS_NAME" value="week2.CausalOrderTest" />
-      <option name="METHOD_NAME" value="toComputationTest0" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GlobalTransitionSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LamportsClockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
@@ -133,19 +113,35 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="week2" />
-      <option name="MAIN_CLASS_NAME" value="week2.GlobalTransitionSystemTest" />
+      <option name="MAIN_CLASS_NAME" value="week2.LamportsClockTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LamportsClockTest.testConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Opdrachten" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week2" />
+      <option name="MAIN_CLASS_NAME" value="week2.LamportsClockTest" />
+      <option name="METHOD_NAME" value="testConstructor1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LamportsClockTest.testConstructor1" />
+        <item itemvalue="JUnit.LamportsClockTest" />
+        <item itemvalue="JUnit.CausalOrderTest" />
         <item itemvalue="JUnit.CausalOrderTest.toComputationTest1" />
         <item itemvalue="JUnit.CausalOrderTest.toComputationTest2" />
-        <item itemvalue="JUnit.CausalOrderTest.toComputationTest0" />
-        <item itemvalue="JUnit.CausalOrderTest" />
-        <item itemvalue="JUnit.GlobalTransitionSystemTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +155,8 @@
       <updated>1715422707596</updated>
       <workItem from="1715422709620" duration="1015000" />
       <workItem from="1716040381350" duration="34755000" />
-      <workItem from="1716382731432" duration="21577000" />
+      <workItem from="1716382731432" duration="26816000" />
+      <workItem from="1716967886958" duration="2591000" />
     </task>
     <servers />
   </component>
@@ -167,20 +164,12 @@
     <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/week2/CausalOrder.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="week2.GlobalTransitionSystem" memberName="transitions" />
         <PinnedItemInfo parentTag="java.util.LinkedHashMap$Entry" memberName="value" />
         <PinnedItemInfo parentTag="java.lang.Integer" memberName="value" />
+        <PinnedItemInfo parentTag="framework.ListChannel" memberName="buffer" />
         <PinnedItemInfo parentTag="week1.RockPaperScissorsMultiRoundsProcess" memberName="roundOtherProcesses" />
       </pinned-members>
     </pin-to-top-manager>
