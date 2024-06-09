@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0eb7fca8-b4ef-46d6-a0a2-42512a73e4f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week34/ChandyLamportInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week34/ChandyLamportInitiator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week34/ChandyLamportNonInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week34/ChandyLamportNonInitiator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week34/ChandyLamportProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week34/ChandyLamportProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week34/LaiYangInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week34/LaiYangInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week34/LaiYangNonInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week34/LaiYangNonInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week34/LaiYangProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week34/LaiYangProcess.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +67,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.ChandyLamportProcessTest">
-    <configuration name="ChandyLamportProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LaiYangProcessTest">
+    <configuration name="LaiYangProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
@@ -77,13 +77,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="week34" />
-      <option name="MAIN_CLASS_NAME" value="week34.ChandyLamportProcessTest" />
+      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChandyLamportProcessTest.receiveTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LaiYangProcessTest.receiveTest15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
@@ -92,66 +92,68 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="week34" />
-      <option name="MAIN_CLASS_NAME" value="week34.ChandyLamportProcessTest" />
+      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
+      <option name="METHOD_NAME" value="receiveTest15" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaiYangProcessTest.receiveTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Opdrachten" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week34.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week34" />
+      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
       <option name="METHOD_NAME" value="receiveTest3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LamportsClockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LaiYangProcessTest.receiveTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week2.*" />
+          <option name="PATTERN" value="week34.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week2" />
-      <option name="MAIN_CLASS_NAME" value="week2.LamportsClockTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LamportsClockTest.testConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Opdrachten" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week2" />
-      <option name="MAIN_CLASS_NAME" value="week2.LamportsClockTest" />
-      <option name="METHOD_NAME" value="testConstructor1" />
+      <option name="PACKAGE_NAME" value="week34" />
+      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
+      <option name="METHOD_NAME" value="receiveTest6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VectorClockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LaiYangProcessTest.receiveTest9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week2.*" />
+          <option name="PATTERN" value="week34.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week2" />
-      <option name="MAIN_CLASS_NAME" value="week2.VectorClockTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="week34" />
+      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
+      <option name="METHOD_NAME" value="receiveTest9" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChandyLamportProcessTest" />
-        <item itemvalue="JUnit.ChandyLamportProcessTest.receiveTest3" />
-        <item itemvalue="JUnit.VectorClockTest" />
-        <item itemvalue="JUnit.LamportsClockTest.testConstructor1" />
-        <item itemvalue="JUnit.LamportsClockTest" />
+        <item itemvalue="JUnit.LaiYangProcessTest" />
+        <item itemvalue="JUnit.LaiYangProcessTest.receiveTest6" />
+        <item itemvalue="JUnit.LaiYangProcessTest.receiveTest15" />
+        <item itemvalue="JUnit.LaiYangProcessTest.receiveTest9" />
+        <item itemvalue="JUnit.LaiYangProcessTest.receiveTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +169,7 @@
       <workItem from="1716040381350" duration="34755000" />
       <workItem from="1716382731432" duration="26816000" />
       <workItem from="1716967886958" duration="2995000" />
-      <workItem from="1717144394806" duration="13229000" />
+      <workItem from="1717144394806" duration="20596000" />
     </task>
     <servers />
   </component>
@@ -178,9 +180,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/week34/ChandyLamportProcess.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="37" />
+          <url>file://$PROJECT_DIR$/src/week34/LaiYangProcessTest.java</url>
+          <line>203</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week34/LaiYangProcessTest.java</url>
+          <line>313</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week34/LaiYangProcessTest.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -190,6 +202,7 @@
         <PinnedItemInfo parentTag="week2.GlobalTransitionSystem" memberName="transitions" />
         <PinnedItemInfo parentTag="java.lang.Integer" memberName="value" />
         <PinnedItemInfo parentTag="framework.ListChannel" memberName="buffer" />
+        <PinnedItemInfo parentTag="week34.LaiYangControlMessage" memberName="n" />
         <PinnedItemInfo parentTag="week1.RockPaperScissorsMultiRoundsProcess" memberName="roundOtherProcesses" />
       </pinned-members>
     </pin-to-top-manager>
@@ -197,6 +210,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Opdrachten$CausalOrderTest_toComputationTest1.ic" NAME="CausalOrderTest.toComputationTest1 Coverage Results" MODIFIED="1716745687189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>week2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Opdrachten$LaiYangProcessTest_receiveTest9.ic" NAME="LaiYangProcessTest.receiveTest9 Coverage Results" MODIFIED="1717867307273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>week34.*</FILTER>
     </SUITE>
   </component>
 </project>

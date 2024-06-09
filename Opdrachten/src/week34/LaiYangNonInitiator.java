@@ -6,13 +6,13 @@ import framework.Message;
 
 public class LaiYangNonInitiator extends LaiYangProcess {
 
-	@Override
-	public void init() {
-		// TODO
-	}
-	
-	@Override
-	public void receive(Message m, Channel c) throws IllegalReceiveException {
-		// TODO
-	}
+    @Override
+    public void init() {
+        super.init();
+    }
+
+    @Override
+    public void receive(Message m, Channel c) throws IllegalReceiveException {
+        super.receive(m, c);;
+    }
 }
