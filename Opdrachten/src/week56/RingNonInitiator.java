@@ -8,11 +8,11 @@ public class RingNonInitiator extends RingProcess {
 
 	@Override
 	public void init() {
-		// TODO
-	}
+      super.init();
+  }
 
 	@Override
 	public void receive(Message m, Channel c) throws IllegalReceiveException {
-		// TODO
-	}
+      super.receive(m, c);
+  }
 }
