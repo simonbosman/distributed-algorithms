@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0eb7fca8-b4ef-46d6-a0a2-42512a73e4f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week56/RingInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/RingInitiator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week56/RingNonInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/RingNonInitiator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week56/RingProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/RingProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week56/TarryInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/TarryInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week56/TarryNonInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/TarryNonInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week56/TarryProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/TarryProcess.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.LaiYangProcessTest">
+  <component name="RunManager" selected="JUnit.TarryProcessTest.receiveTest12">
     <configuration name="LaiYangProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
@@ -79,38 +79,6 @@
       <option name="PACKAGE_NAME" value="week34" />
       <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LaiYangProcessTest.receiveTest15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Opdrachten" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week34.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week34" />
-      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
-      <option name="METHOD_NAME" value="receiveTest15" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LaiYangProcessTest.receiveTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Opdrachten" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week34.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week34" />
-      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
-      <option name="METHOD_NAME" value="receiveTest3" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,17 +99,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LaiYangProcessTest.receiveTest9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TarryProcessTest.receiveTest12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week34.*" />
+          <option name="PATTERN" value="week56.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week34" />
-      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
-      <option name="METHOD_NAME" value="receiveTest9" />
+      <option name="PACKAGE_NAME" value="week56" />
+      <option name="MAIN_CLASS_NAME" value="week56.TarryProcessTest" />
+      <option name="METHOD_NAME" value="receiveTest12" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TarryProcessTest.receiveTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Opdrachten" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week56.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week56" />
+      <option name="MAIN_CLASS_NAME" value="week56.TarryProcessTest" />
+      <option name="METHOD_NAME" value="receiveTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TarryProcessTest.receiveTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Opdrachten" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week56.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week56" />
+      <option name="MAIN_CLASS_NAME" value="week56.TarryProcessTest" />
+      <option name="METHOD_NAME" value="receiveTest5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TarryProcessTest.receiveTest12" />
+        <item itemvalue="JUnit.TarryProcessTest.receiveTest5" />
+        <item itemvalue="JUnit.TarryProcessTest.receiveTest2" />
         <item itemvalue="JUnit.LaiYangProcessTest" />
         <item itemvalue="JUnit.LaiYangProcessTest.receiveTest6" />
-        <item itemvalue="JUnit.LaiYangProcessTest.receiveTest15" />
-        <item itemvalue="JUnit.LaiYangProcessTest.receiveTest9" />
-        <item itemvalue="JUnit.LaiYangProcessTest.receiveTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +169,7 @@
       <workItem from="1716040381350" duration="34755000" />
       <workItem from="1716382731432" duration="26816000" />
       <workItem from="1716967886958" duration="2995000" />
-      <workItem from="1717144394806" duration="22377000" />
+      <workItem from="1717144394806" duration="24633000" />
     </task>
     <servers />
   </component>
