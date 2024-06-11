@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0eb7fca8-b4ef-46d6-a0a2-42512a73e4f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week56/TarryInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/TarryInitiator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week56/TarryNonInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/TarryNonInitiator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week56/TarryProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/TarryProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week56/DepthFirstSearchInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/DepthFirstSearchInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week56/DepthFirstSearchNonInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/DepthFirstSearchNonInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week56/DepthFirstSearchProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/DepthFirstSearchProcess.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,33 +67,34 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.TarryProcessTest.receiveTest12">
-    <configuration name="LaiYangProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DepthFirstSearchProcessTest.receiveTest11">
+    <configuration name="DepthFirstSearchProcessTest.initTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week34.*" />
+          <option name="PATTERN" value="week56.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week34" />
-      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="week56" />
+      <option name="MAIN_CLASS_NAME" value="week56.DepthFirstSearchProcessTest" />
+      <option name="METHOD_NAME" value="initTest1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LaiYangProcessTest.receiveTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepthFirstSearchProcessTest.receiveTest11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week34.*" />
+          <option name="PATTERN" value="week56.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week34" />
-      <option name="MAIN_CLASS_NAME" value="week34.LaiYangProcessTest" />
-      <option name="METHOD_NAME" value="receiveTest6" />
+      <option name="PACKAGE_NAME" value="week56" />
+      <option name="MAIN_CLASS_NAME" value="week56.DepthFirstSearchProcessTest" />
+      <option name="METHOD_NAME" value="receiveTest11" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DepthFirstSearchProcessTest.receiveTest11" />
+        <item itemvalue="JUnit.DepthFirstSearchProcessTest.initTest1" />
         <item itemvalue="JUnit.TarryProcessTest.receiveTest12" />
         <item itemvalue="JUnit.TarryProcessTest.receiveTest5" />
         <item itemvalue="JUnit.TarryProcessTest.receiveTest2" />
-        <item itemvalue="JUnit.LaiYangProcessTest" />
-        <item itemvalue="JUnit.LaiYangProcessTest.receiveTest6" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +170,7 @@
       <workItem from="1716040381350" duration="34755000" />
       <workItem from="1716382731432" duration="26816000" />
       <workItem from="1716967886958" duration="2995000" />
-      <workItem from="1717144394806" duration="24633000" />
+      <workItem from="1717144394806" duration="25915000" />
     </task>
     <servers />
   </component>

@@ -6,13 +6,15 @@ import framework.Message;
 
 public class DepthFirstSearchInitiator extends DepthFirstSearchProcess {
 
-	@Override
-	public void init() {
-		// TODO
-	}
+    @Override
+    public void init() {
+        super.init();
+        setParent(this);
+        sendTokenInChannels(new TokenMessage(), getOutgoing().iterator().next());
+    }
 
-	@Override
-	public void receive(Message m, Channel c) throws IllegalReceiveException {
-		// TODO
-	}
+    @Override
+    public void receive(Message m, Channel c) throws IllegalReceiveException {
+        super.receive(m, c);
+    }
 }
