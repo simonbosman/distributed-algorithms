@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0eb7fca8-b4ef-46d6-a0a2-42512a73e4f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week56/DepthFirstSearchInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/DepthFirstSearchInitiator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week56/DepthFirstSearchNonInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/DepthFirstSearchNonInitiator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week56/DepthFirstSearchProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/DepthFirstSearchProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week56/DepthFirstSearchExtraPiggybackInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/DepthFirstSearchExtraPiggybackInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week56/DepthFirstSearchExtraPiggybackNonInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/DepthFirstSearchExtraPiggybackNonInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week56/DepthFirstSearchExtraPiggybackProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week56/DepthFirstSearchExtraPiggybackProcess.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,39 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.DepthFirstSearchProcessTest.receiveTest11">
+  <component name="RunManager" selected="JUnit.DepthFirstSearchExtraPiggybackProcessTest.receiveTest3">
+    <configuration name="DepthFirstSearchExtraPiggybackProcessTest.initTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Opdrachten" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week56.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week56" />
+      <option name="MAIN_CLASS_NAME" value="week56.DepthFirstSearchExtraPiggybackProcessTest" />
+      <option name="METHOD_NAME" value="initTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepthFirstSearchExtraPiggybackProcessTest.receiveTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Opdrachten" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week56.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week56" />
+      <option name="MAIN_CLASS_NAME" value="week56.DepthFirstSearchExtraPiggybackProcessTest" />
+      <option name="METHOD_NAME" value="receiveTest3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DepthFirstSearchProcessTest.initTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Opdrachten" />
       <extension name="coverage">
@@ -116,45 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TarryProcessTest.receiveTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Opdrachten" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week56.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week56" />
-      <option name="MAIN_CLASS_NAME" value="week56.TarryProcessTest" />
-      <option name="METHOD_NAME" value="receiveTest2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TarryProcessTest.receiveTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Opdrachten" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week56.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week56" />
-      <option name="MAIN_CLASS_NAME" value="week56.TarryProcessTest" />
-      <option name="METHOD_NAME" value="receiveTest5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DepthFirstSearchExtraPiggybackProcessTest.receiveTest3" />
+        <item itemvalue="JUnit.DepthFirstSearchExtraPiggybackProcessTest.initTest1" />
         <item itemvalue="JUnit.DepthFirstSearchProcessTest.receiveTest11" />
         <item itemvalue="JUnit.DepthFirstSearchProcessTest.initTest1" />
         <item itemvalue="JUnit.TarryProcessTest.receiveTest12" />
-        <item itemvalue="JUnit.TarryProcessTest.receiveTest5" />
-        <item itemvalue="JUnit.TarryProcessTest.receiveTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +171,7 @@
       <workItem from="1716382731432" duration="26816000" />
       <workItem from="1716967886958" duration="2995000" />
       <workItem from="1717144394806" duration="25915000" />
+      <workItem from="1718201299255" duration="1172000" />
     </task>
     <servers />
   </component>
@@ -195,6 +196,16 @@
           <line>132</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week56/DepthFirstSearchExtraPiggybackProcess.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week56/DepthFirstSearchExtraPiggybackProcessTest.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -205,6 +216,7 @@
         <PinnedItemInfo parentTag="framework.ListChannel" memberName="buffer" />
         <PinnedItemInfo parentTag="week34.LaiYangControlMessage" memberName="n" />
         <PinnedItemInfo parentTag="week1.RockPaperScissorsMultiRoundsProcess" memberName="roundOtherProcesses" />
+        <PinnedItemInfo parentTag="week56.DepthFirstSearchExtraPiggybackInitiator" memberName="name" />
       </pinned-members>
     </pin-to-top-manager>
   </component>
