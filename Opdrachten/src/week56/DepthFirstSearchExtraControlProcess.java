@@ -3,23 +3,21 @@ package week56;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
-import java.util.Optional;
 import java.util.Set;
-import java.util.function.Predicate;
 
 import framework.Channel;
 import framework.IllegalReceiveException;
 import framework.Message;
 import framework.Process;
-import framework.SetChannel;
 
 public abstract class DepthFirstSearchExtraControlProcess extends WaveProcess {
 
     private Process parent;
-    protected TokenMessage tokenMessage;
+    private boolean didReceiveMessage;
     private Set<Channel> sendTokenInChannels = new LinkedHashSet<Channel>();
     private Set<Process> receivedInfoMessages = new LinkedHashSet<Process>();
     private Map<Process, Boolean> receivedAckMessages = new HashMap<Process, Boolean>();
+    protected TokenMessage tokenMessage;
 
     @Override
     public void init() {
@@ -33,6 +31,7 @@ public abstract class DepthFirstSearchExtraControlProcess extends WaveProcess {
         if (isPassive()) {
             throw new IllegalReceiveException();
         }
+        didReceiveMessage = true;
         if (m instanceof TokenMessage && getParent() == null) {
             tokenMessage = (TokenMessage) m;
             setParent(c.getSender());
@@ -40,11 +39,14 @@ public abstract class DepthFirstSearchExtraControlProcess extends WaveProcess {
         }
         if (m instanceof InfoMessage) {
             receiveInfoMessage(c);
+            return;
         }
         if (m instanceof AckMessage) {
             receiveAckMessage(c);
         }
-        if (receivedAckMessages.values().stream().allMatch(Boolean::booleanValue)) {
+        if (receivedAckMessages.values().stream()
+                .allMatch(Boolean::booleanValue) &&
+                !receivedAckMessages.isEmpty()) {
             sendToken();
         }
     }
@@ -69,11 +71,29 @@ public abstract class DepthFirstSearchExtraControlProcess extends WaveProcess {
                 .findFirst().orElse(null);
     }
 
-    private void receiveInfoMessage(Channel c) {
-        receivedInfoMessages.add(c.getSender());
+    private Channel parent() {
+        return getOutgoing().stream()
+                .filter(c -> c.getReceiver() == getParent())
+                .findFirst().orElse(null);
     }
 
-    private void receiveAckMessage(Channel c) {
+    private void receiveInfoMessage(Channel c) {
+        receivedInfoMessages.add(c.getSender());
+        Channel sendAckInChannel = getOutgoing().stream()
+                .filter(c2 -> c2.getReceiver() == c.getSender())
+                .findFirst().orElse(null);
+        if (sendAckInChannel != null) {
+            send(new AckMessage(), sendAckInChannel);
+        }
+    }
+
+    private void receiveAckMessage(Channel c) throws IllegalReceiveException {
+        if (!receivedAckMessages.containsKey(c.getSender())) {
+            throw new IllegalReceiveException();
+        }
+        if (receivedAckMessages.get(c.getSender()) == true) {
+            throw new IllegalReceiveException();
+        }
         receivedAckMessages.put(c.getSender(), true);
     }
 
@@ -81,11 +101,11 @@ public abstract class DepthFirstSearchExtraControlProcess extends WaveProcess {
         if (futureChild() != null) {
             send(tokenMessage, futureChild());
             sendTokenInChannels.add(futureChild());
-        } else if (this == getParent()) {
+        } else if (this.equals(getParent()) && didReceiveMessage) {
             done();
-        } else {
-            send(tokenMessage, new SetChannel(this, getParent()));
-            sendTokenInChannels.add(new SetChannel(this, getParent()));
+        } else if (parent() != null) {
+            send(tokenMessage, parent());
+            sendTokenInChannels.add(parent());
             done();
         }
     }
