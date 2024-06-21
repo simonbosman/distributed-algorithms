@@ -8,11 +8,14 @@ public class DepthFirstSearchExtraControlInitiator extends DepthFirstSearchExtra
 
 	@Override
 	public void init() {
-		// TODO
-	}
+		super.init();
+    setParent(this);
+    tokenMessage = new TokenMessage();
+    sendInfoMessages();
+  }
 
 	@Override
 	public void receive(Message m, Channel c) throws IllegalReceiveException {
-		// TODO
-	}
+      super.receive(m, c);
+  }
 }
