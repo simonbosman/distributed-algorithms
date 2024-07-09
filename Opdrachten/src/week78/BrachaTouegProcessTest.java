@@ -559,7 +559,6 @@ class BrachaTouegProcessTest {
 		} catch (IllegalReceiveException e) {
 			assertTrue(false);
 		}
-		
 		assertEquals(1, output.get("u").size());
 		assertEquals("false", output.get("u").iterator().next());
 	}

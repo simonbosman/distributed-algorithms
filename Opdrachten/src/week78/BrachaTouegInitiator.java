@@ -6,13 +6,14 @@ import framework.Message;
 
 public class BrachaTouegInitiator extends BrachaTouegProcess {
 
-	@Override
-	public void init() {
-		// TODO
-	}
+    @Override
+    public void init() {
+        super.init();
+        notifyOutRequests();
+    }
 
-	@Override
-	public void receive(Message m, Channel c) throws IllegalReceiveException {
-		// TODO
-	}
+    @Override
+    public void receive(Message m, Channel c) throws IllegalReceiveException {
+        super.receive(m, c);
+    }
 }

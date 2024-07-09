@@ -91,7 +91,7 @@ public abstract class DepthFirstSearchExtraControlProcess extends WaveProcess {
         if (!receivedAckMessages.containsKey(c.getSender())) {
             throw new IllegalReceiveException();
         }
-        if (receivedAckMessages.get(c.getSender()) == true) {
+        if (receivedAckMessages.get(c.getSender())) {
             throw new IllegalReceiveException();
         }
         receivedAckMessages.put(c.getSender(), true);
